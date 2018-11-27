@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link rel="stylesheet" href="StyleSheet/StyleSheet.css">
+    <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah" rel="stylesheet">
+
+</head>
+<body class="background">
+
+    <section class="text-center">
+        <div class="container">
+            <img class="animation" src="Images/emblem.png">
+            <h1 class="header_colour animation">Alex's Game Site</h1>
+            <p class="lead text-muted animation header_colour">The site to find great games!</p>
+        </div>
+    </section>
+
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <a class="navbar-brand nav-color" href="#"><img src="Images/emblem.png"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link nav-color" href="index.html">Landing <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link nav-color" href="Content Page 1.html">Content #1</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link nav-color" href="Content Page 2.html">Content #2</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link nav-color" href="Contact.html">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container cssgrid lightbox">
+        <form class="needs-validation" novalidate>
+            <div class="form-row">
+                <div class="col-md-6 mb-3">
+                    <label for="validationCustom01">First name</label>
+                    <input type="text" class="form-control" id="validationCustom01" placeholder="First name" required>
+                    <div class="valid-feedback">
+                        Looks good!
+                    </div>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <label for="validationCustom02">Last name</label>
+                    <input type="text" class="form-control" id="validationCustom02" placeholder="Last name" required>
+                    <div class="valid-feedback">
+                        Looks good!
+                    </div>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="col-md-6 mb-3">
+                    <label for="validationCustom04">Email</label>
+                    <input type="email" class="form-control" id="validationCustom04" placeholder="Email" required>
+                    <div class="invalid-feedback">
+                        Please provide a valid Email.
+                    </div>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <label for="validationCustom03">Country</label>
+                    <input type="text" class="form-control" id="validationCustom03" placeholder="Country" required>
+                    <div class="invalid-feedback">
+                        Please provide a valid Country.
+                    </div>
+                </div>
+                <div class="col-md-12 mb-3">
+                    <label for="validationCustom05">Feedback</label>
+                    <input type="text" class="form-control" id="validationCustom05" placeholder="Feedback" required>
+                    <div class="invalid-feedback">
+                        Please provide a feedback.
+                    </div>
+                </div>
+            </div>
+            <button class="btn btn-primary" type="submit">Submit form</button>
+        </form>
+
+    </div>
+
+    <br><br>
+
+    <div class="container cssgrid">
+        <div class="embed-responsive embed-responsive-16by9">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2602.6277175290943!2d-123.11744348431056!3d49.28345107933151!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54867178c6f02ee1%3A0xb4e03bf432e66714!2sBCIT+Downtown+Campus!5e0!3m2!1sen!2sca!4v1542739887874" width="auto" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </div>
+    </div>
+
+        <footer>
+            <div class="container">
+                <span class="text-muted">© 2018 Alex Cho All Rights Reserved</span>
+                <i class="fab fa-snapchat-ghost"></i>
+                <i class="fab fa-facebook-f"></i>
+                <i class="fab fa-twitter"></i>
+            </div>
+        </footer>
+
+    <script>
+        (function() {
+            'use strict';
+            window.addEventListener('load', function() {
+                var forms = document.getElementsByClassName('needs-validation');
+                var validation = Array.prototype.filter.call(forms, function(form) {
+                    form.addEventListener('submit', function(event) {
+                        if (form.checkValidity() === false) {
+                            event.preventDefault();
+                            event.stopPropagation();
+                        }
+                        else{
+                            alert('Thank you for your feedback!')
+                        }
+                        form.classList.add('was-validated');
+                    }, false);
+                });
+            }, false);
+        })();
+    </script>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</body>
+</html>
