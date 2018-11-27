@@ -1,0 +1,108 @@
+nav {
+    margin-top: 0px;
+}
+
+.background {
+    background-image: url(../Images/background.jpg);
+    background-repeat: repeat;
+    height: 100%;
+    width: 100%;
+}
+
+.header_colour{
+    color: #E3E3E3;
+    font-family: 'Gloria Hallelujah', cursive;
+}
+
+.nav-color{
+    color: #F8F9FA;
+    font-family: 'Gloria Hallelujah', cursive;
+}
+
+.info_color{
+    color: #E9E7E8;
+    font-family: 'Sedgwick Ave', cursive;
+}
+
+.info_background{
+    background-color: #000000;
+}
+
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+}
+
+.fab:hover {
+    opacity: 0.7;
+}
+
+.fa-snapchat-ghost {
+    color: #FBFF12;
+}
+
+.fa-twitter {
+    color: #55ACEE;
+}
+
+.fa-facebook-f{
+    color: #1768AC
+}
+
+.animation {
+    animation: fadeAndScale 1.5s ease-in;
+}
+
+@keyframes fadeAndScale {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+
+.carousel-item{
+    opacity:0.6;
+}
+
+.carousel-item:hover{
+    transition: .5s ease;
+    opacity:1;
+}
+
+.lightbox {
+    background: #BEBCBE;
+    border: 20px solid rgba(0, 0, 0, 0.3);
+    padding: 50px;
+    width: 75%;
+    float: none;
+    display: inline-block;
+    border-radius: 25px;
+    margin: 0 auto;
+}
+
+.carousel-size-content {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.carousel-inner > .item > img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    height: 300px;
+}
+
+.cssgrid {
+    grid-template-columns: 100px 100px 100px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
